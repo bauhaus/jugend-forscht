@@ -30,6 +30,9 @@ h2, h3, h4 {
   font-style: italic;
   font-weight: 900;
 }
+.btn-group-sm>.btn>.badge {
+  font-size: 0.8em;
+}
 h2 + .menu {
   margin-top: 20px;
 }
