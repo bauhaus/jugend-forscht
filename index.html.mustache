@@ -56,31 +56,54 @@
         
       </div> <!-- end row  -->
 
-      {{#results}}
+      {{#if results}}
       
       <div id="results" class="row">
         
+        {{#results}}
+
+        {{! only show entry if there is a link }}
+        {{#if link}}
         <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3 class="name">{{name}}</h3>
+          <h3>{{firstname}} <span class="name">{{lastname}}</span></h3>
           <p>
-            <span class="study">{{study}}</span>
+            <span>
+              <b class="study">{{study}}</b>{{#if semester}}&nbsp;<span class="semester">({{semester}})</span>{{/if}}
+            </span>
+            {{#if project}}&nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>{{/if}}
+            {{#if fachkurs}}&nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>{{/if}}
+            {{#if freeProject}}&nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>{{/if}}
             <span class="meta">
-              <span class="filesize">{{filesize}} kB</span>
-              /
-              <span class="loc">{{loc}}L </span>
+              <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}}L </span>
             </span>
           </p>
-          <img src="{{image}}" class="img-responsive" alt="{{study}}">
+          <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{study}}">
           <p>{{text}}</p>
-          <p><a class="link" href="#" href="http://{{link}}">{{link}}</a></p>
+          <p><a class="link" href="http://{{link}}">{{link}}</a>
+            <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+          </p>
         </div>
+        {{/if}}
+        
+        {{/results}}
         
       </div> <!-- end row  -->
 
-      {{/results}}
+      {{/if}}
+      
+      <div class="debug alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Debug!</strong>
+        The following students were found in the database, but no link is known: <br>
+        {{#results}}
+          {{^link}}
+            {{lastname}}, {{firstname}}; 
+          {{/link}}
+        {{/results}}
+      </div>
 
       <hr>
-
+      
       <footer>
         <p>{{footer}}</p>
       </footer>
