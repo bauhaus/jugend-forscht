@@ -12,26 +12,23 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg : grunt.file.readJSON('package.json'),
-    site: grunt.file.readYAML('src/data/site.yml'),
+    // pkg : grunt.file.readJSON('package.json'),
+    // site: grunt.file.readYAML('src/data/site.yml'),
 
     assemble: {
       // Task-level options
       options: {
         prettify: {indent: 2},
         marked: {sanitize: false},
-        production: true,
-        data: 'src/**/*.{json,yml}',
-        assets: '<%= site.destination %>/assets',
-        helpers: 'src/helpers/helper-*.js',
-        layoutdir: 'src/templates/layouts',
-        partials: ['src/templates/includes/**/*.hbs'],
+        engine: 'handlebars'
       },
       site: {
         // Target-level options
-        options: {layout: 'default.hbs'},
+        options: {
+          data: 'jugend-forscht.json'
+        },
         files: [
-          { expand: true, cwd: 'src/templates/pages', src: ['*.hbs'], dest: '<%= site.destination %>/' }
+          { src: ['index.html.mustache'], dest: 'index.html' }
         ]
       }
     },
@@ -39,7 +36,7 @@ module.exports = function(grunt) {
     // Before generating any new files,
     // remove any previously-created files.
     clean: {
-      all: ['<%= site.destination %>/**/*.{html,md}']
+      all: ['index.{html}']
     }
   });
 
