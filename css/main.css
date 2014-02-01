@@ -42,7 +42,7 @@ h2 + .menu {
   margin-top: 20px;
 }
 .menu p {
-  float: right;   
+  float: right;
 }
 
 /* # result listing */
@@ -50,27 +50,25 @@ h2 + .menu {
 /* if browser is too small, don't make small grid */
 @media(max-width:320px){
   /* we use only the half-size */
-  .col-xs-6 {
+  #results .col-xs-6 {
     width: auto;
   }
 }
-.work-link {
+#results .link {
   font-size: 1.5em;
-}
-.work-link code {
   color: hsl(210, 69%, 46%);
   white-space: nowrap;
   background-color: #fff;
   border-color: hsl(210, 69%, 46%);
-  border-width: 0.15em;
+  border-width: 0.125em;
   border-bottom-style: solid;
 }
-.work-link code:hover {
+#results .link:hover {
   color: hsl(210, 69%, 36%);
   background-color: hsl(210, 37%, 96%);
   border-color: hsl(210, 69%, 36%);
 }
-[data-filesize] {
+#results .meta {
   float: right;
   opacity: 0.4;
   font-weight: 700;

@@ -56,23 +56,28 @@
         
       </div> <!-- end row  -->
 
-      <div class="row">
-        
-        {{#results}}
+      {{#results}}
+      
+      <div id="results" class="row">
         
         <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>{{name}}</h3>
-          <p class="study">{{study}} 
-            <span class="filesize">{{filesize}} kB</span>
+          <h3 class="name">{{name}}</h3>
+          <p>
+            <span class="study">{{study}}</span>
+            <span class="meta">
+              <span class="filesize">{{filesize}} kB</span>
+              /
+              <span class="loc">{{loc}}L </span>
+            </span>
           </p>
-          <img src="js/vendor/holder.js/360x20" class="img-responsive" alt="{{study}}">
-          <p>{{description}}</p>
-          <p><a class="work-link" href="#" href="http://{{link}}"><code>{{study}}</code></a></p>
+          <img src="{{image}}" class="img-responsive" alt="{{study}}">
+          <p>{{text}}</p>
+          <p><a class="link" href="#" href="http://{{link}}">{{link}}</a></p>
         </div>
         
-        {{/results}}
-
       </div> <!-- end row  -->
+
+      {{/results}}
 
       <hr>
 
