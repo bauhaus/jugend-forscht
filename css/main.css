@@ -3,6 +3,8 @@
 /* font choice: 
 http://www.google.com/fonts/#ReviewPlace:refine/Collection:Exo|Alegreya+Sans|Raleway|Chivo|Titillium+Web*/
 
+
+/* # General style */
 body, body * {
   font-family: 'Alegreya Sans', sans-serif;
 }
@@ -12,6 +14,8 @@ a:hover {
 h2, h3, h4 {
  font-weight: 700;   
 }
+
+/* site header + menu */
 .jumbotron {
   padding: 2.8em 0;
   color: #eee;
@@ -21,6 +25,7 @@ h2, h3, h4 {
   background-size: 100% auto;
   background-attachment: fixed;
 }
+/* if screen is to small, make background image bigger so it does not repeat*/
 @media(max-width:768px){
   .jumbotron {
     background-size: 130% auto;
@@ -39,6 +44,9 @@ h2 + .menu {
 .menu p {
   float: right;   
 }
+
+/* # result listing */
+
 /* if browser is too small, don't make small grid */
 @media(max-width:320px){
   /* we use only the half-size */
@@ -67,6 +75,8 @@ h2 + .menu {
   opacity: 0.4;
   font-weight: 700;
 }
+
+/* # JS stuff */
 /* hide javascript-only controls */
 .js-only {
   display: none;
