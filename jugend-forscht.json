@@ -1,0 +1,16 @@
+{
+  "title": "„Jugend forscht“",
+  "tagline": "hello world!",
+  "footer": "Projekt 'Jugend forscht' bei Prof. Norbert Hinterberger und Dr. Naomi T. Salmon, Freie Kunst, Bauhaus-Universität Weimar, WS 2013/24",
+  "results": [
+    {
+      "name": "Vorname Name",
+      "study": "Studiengang",
+      "semester": 1,
+      "filesize": 1024,
+      "text": "Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.",
+      "image": "holder.js/360x80",
+      "link": "example.com"
+    }
+  ]
+}
