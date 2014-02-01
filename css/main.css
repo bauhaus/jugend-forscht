@@ -1,12 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,900,900italic,700italic,400italic);
 
+
 /* font choice: 
 http://www.google.com/fonts/#ReviewPlace:refine/Collection:Exo|Alegreya+Sans|Raleway|Chivo|Titillium+Web*/
 
 
 /* # General style */
 body, body * {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans', Baskerville, Georgia, serif;
 }
 a:hover {
   text-decoration: none;
@@ -21,7 +22,7 @@ h2, h3, h4 {
   color: #eee;
   text-shadow: 1px 1px 2px black;
   background-color: #444;
-  background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52cf9489095e8_1.JPG");
+  /*background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52cf9489095e8_1.JPG");*/
   background-size: 100% auto;
   background-attachment: fixed;
 }
@@ -48,10 +49,14 @@ h2 + .menu {
 /* # result listing */
 
 /* if browser is too small, don't make small grid */
-@media(max-width:320px){
+@media(max-width:475px){
   /* we use only the half-size */
   #results .col-xs-6 {
     width: auto;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
 }
 #results [class|="col"] {

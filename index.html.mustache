@@ -19,8 +19,6 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
           
-    {{#jugend-forscht}}
-    
     <div class="jumbotron">
       <div class="container">
         <h1>{{title}}</h1>
@@ -60,10 +58,7 @@
       
       <div id="results" class="row">
         
-        {{#results}}
-
-        {{! only show entry if there is a link }}
-        {{#if link}}
+        {{#each results}}
         <div class="col-xs-6 col-sm-4 col-md-3">
           <h3>{{firstname}} <span class="name">{{lastname}}</span></h3>
           <p>
@@ -78,14 +73,25 @@
             </span>
           </p>
           <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{study}}">
-          <p>{{text}}</p>
+          
+          <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
+          
+          {{#if link}}
           <p><a class="link" href="http://{{link}}">{{link}}</a>
             <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
           </p>
+          {{/if}}
         </div>
-        {{/if}}
-        
-        {{/results}}
+        {{#ifNth "2" @index}}
+         <div class="clearfix visible-xs"></div>
+        {{/ifNth}}
+        {{#ifNth "3" @index}}
+         <div class="clearfix visible-sm"></div>
+        {{/ifNth}}
+        {{#ifNth "4" @index}}
+         <div class="clearfix visible-md visible-lg"></div>
+        {{/ifNth}}
+        {{/each}}
         
       </div> <!-- end row  -->
 
@@ -93,29 +99,37 @@
       
       <div class="debug alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Debug!</strong>
-        The following students were found in the database, but no link is known: <br>
+        <strong>Debug — Fehlende Infos!</strong><br><br>
+        <ul><b>Kein Link:</b>
         {{#results}}
           {{^link}}
-            {{lastname}}, {{firstname}}; 
+            <li>{{lastname}}, {{firstname}}</li> 
           {{/link}}
-        {{/results}}
+        {{/results}}</ul><br>
+        
+          <ul><b>Kein Semester:</b>
+          {{#results}}
+            {{^semester}}
+              <li>{{lastname}}, {{firstname}}</li>
+            {{/semester}}
+          {{/results}}</ul>
       </div>
 
       <hr>
       
       <footer>
-        <p>{{footer}}</p>
+        {{#footer}}
+        <p>{{this}}</p>
+        {{/footer}}
       </footer>
     </div> <!-- /container -->
     
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
         <script src="js/vendor/holder.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="bower_components/list.js/dist/list.min.js"></script>
 
         <script src="js/main.js"></script>
-
-    {{/jugend-forscht}}
     
     </body>
 </html>

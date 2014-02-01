@@ -23,7 +23,7 @@
   "homepage": "https://github.com/bauhaus/jugend-forscht",
   "dependencies": {
     "grunt": "~0.4.2",
-    "assemble": "~0.4.35",
+    "assemble": "https://github.com/eins78/assemble/tarball/master",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-sass": "~0.5.1",

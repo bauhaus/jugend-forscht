@@ -20,12 +20,13 @@ module.exports = function(grunt) {
       options: {
         prettify: {indent: 2},
         marked: {sanitize: false},
-        engine: 'handlebars'
+        engine: 'handlebars',
+        helpers: 'helper-*.js'
       },
       site: {
         // Target-level options
         options: {
-          data: 'jugend-forscht.json'
+          data: 'data.json'
         },
         files: [
           { src: ['index.html.mustache'], dest: 'index.html' }
