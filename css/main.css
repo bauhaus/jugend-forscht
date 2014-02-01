@@ -54,6 +54,9 @@ h2 + .menu {
     width: auto;
   }
 }
+#results [class|="col"] {
+  margin-bottom: 1em;
+}
 #results .link {
   font-size: 1.5em;
   color: hsl(210, 69%, 46%);
