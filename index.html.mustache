@@ -95,13 +95,20 @@
       
       <div class="debug alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>Debug!</strong>
-        The following students were found in the database, but no link is known: <br>
+        <strong>Debug — Fehlende Infos!</strong><br><br>
+        <ul><b>Kein Link:</b>
         {{#results}}
           {{^link}}
-            {{lastname}}, {{firstname}}; 
+            <li>{{lastname}}, {{firstname}}</li> 
           {{/link}}
-        {{/results}}
+        {{/results}}</ul><br>
+        
+          <ul><b>Kein Semester:</b>
+          {{#results}}
+            {{^semester}}
+              <li>{{lastname}}, {{firstname}}</li>
+            {{/semester}}
+          {{/results}}</ul>
       </div>
 
       <hr>
