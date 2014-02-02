@@ -58,10 +58,7 @@
       
       <div id="results" class="row">
         
-        {{#results}}
-
-        {{! only show entry if there is a link }}
-        {{#if link}}
+        {{#each results}}
         <div class="col-xs-6 col-sm-4 col-md-3">
           <h3>{{firstname}} <span class="name">{{lastname}}</span></h3>
           <p>
@@ -81,9 +78,16 @@
             <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
           </p>
         </div>
-        {{/if}}
-        
-        {{/results}}
+        {{#ifNth "2" @index}}
+         <div class="clearfix visible-xs"></div>
+        {{/ifNth}}
+        {{#ifNth "3" @index}}
+         <div class="clearfix visible-sm"></div>
+        {{/ifNth}}
+        {{#ifNth "4" @index}}
+         <div class="clearfix visible-md visible-lg"></div>
+        {{/ifNth}}
+        {{/each}}
         
       </div> <!-- end row  -->
 
