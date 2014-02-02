@@ -73,10 +73,14 @@
             </span>
           </p>
           <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{study}}">
-          <p>{{text}}</p>
+          
+          <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
+          
+          {{#if link}}
           <p><a class="link" href="http://{{link}}">{{link}}</a>
             <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
           </p>
+          {{/if}}
         </div>
         {{#ifNth "2" @index}}
          <div class="clearfix visible-xs"></div>
