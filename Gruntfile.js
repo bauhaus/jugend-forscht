@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       site: {
         // Target-level options
         options: {
-          data: 'jugend-forscht.json'
+          data: 'data.json'
         },
         files: [
           { src: ['index.html.mustache'], dest: 'index.html' }
