@@ -1,12 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,900,900italic,700italic,400italic);
 
+
 /* font choice: 
 http://www.google.com/fonts/#ReviewPlace:refine/Collection:Exo|Alegreya+Sans|Raleway|Chivo|Titillium+Web*/
 
 
 /* # General style */
 body, body * {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Alegreya Sans', Baskerville, Georgia, serif;
 }
 a:hover {
   text-decoration: none;
@@ -48,10 +49,14 @@ h2 + .menu {
 /* # result listing */
 
 /* if browser is too small, don't make small grid */
-@media(max-width:320px){
+@media(max-width:475px){
   /* we use only the half-size */
   #results .col-xs-6 {
     width: auto;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
 }
 #results [class|="col"] {
