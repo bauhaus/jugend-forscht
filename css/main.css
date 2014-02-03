@@ -46,7 +46,7 @@ h2 + .menu {
   float: right;
 }
 
-/* # result listing */
+/* menu */
 
 /* if browser is too small, don't make small grid */
 @media(max-width:475px){
@@ -58,7 +58,39 @@ h2 + .menu {
     margin-right: auto;
     float: none;
   }
+/* copy over btn.active from bootstrap for .asc and .desc */
+.menu [data-sort].btn.asc, 
+.menu [data-sort].btn.desc {
+  color: #333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
 }
+
+/* use .caret from bootstrap w/ custom sizes */
+.menu [data-sort] .caret {
+  vertical-align: baseline;
+  border-top-width: 0.5em;
+  border-right-width: 0.5em;
+  border-bottom-width: 0;
+  border-left-width: 0.5em;
+  /* hide it by default */
+  display: none;
+}
+/* un-hide the .caret if button is 'active' */
+.menu [data-sort].asc .caret,
+.menu [data-sort].desc .caret {
+  display: inline-block;
+}
+/* is button is .desc, turn caret around */
+.menu [data-sort].desc .caret {
+  border-bottom-width: 0.5em;
+  border-top-width: 0;
+  content: "";
+}
+
+
+/* items in #result have more space below */
 #results [class|="col"] {
   margin-bottom: 1em;
 }

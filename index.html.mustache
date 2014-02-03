@@ -28,74 +28,80 @@
 
     <div class="container">
       
-      <div class="row">
-        
-        <h2 class="col-sm-6">Resultate
-          <small>Web-Präsentation</small>
-        </h2>
-        
-        <div class="menu js-only col-sm-6">
-          <p><small><b>Sortieren</b> nach:</small>
-            <span class="btn-group btn-group-sm">
-              <button type="button" class="btn btn-default active">Name</button>
-              <button type="button" class="btn btn-default">Studiengang</button>
-              <button type="button" class="btn btn-default">Semester</button>
-              <button type="button" class="btn btn-default">
-                kB&nbsp;&nbsp;
-                <span class="badge" data-toggle="tooltip" title="kB = Dateigröße in Kilobyte">?</span>
-              </button>
-              <button type="button" class="btn btn-default">
-                LoC&nbsp;&nbsp;
-                <span class="badge" data-toggle="tooltip" data-container="body" title="LoC = 'Lines of Code', Anzahl der Code-Zeilen">?</span>
-              </button>
-            </span>
-          </p>
-        </div>
-        
-      </div> <!-- end row  -->
-
       {{#if results}}
+      <div id="results">
       
-      <div id="results" class="row">
+        <div class="row">
         
-        {{#each results}}
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>{{firstname}} <span class="name">{{lastname}}</span></h3>
-          <p>
-            <span>
-              <b class="study">{{study}}</b>{{#if semester}}&nbsp;<span class="semester">({{semester}})</span>{{/if}}
-            </span>
-            {{#if project}}&nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>{{/if}}
-            {{#if fachkurs}}&nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>{{/if}}
-            {{#if freeProject}}&nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>{{/if}}
-            <span class="meta">
-              <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}} LoC </span>
-            </span>
-          </p>
-          <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
-          
-          <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
-          
-          {{#if link}}
-          <p><a class="link" href="http://{{link}}">{{link}}</a>
-            <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          {{/if}}
-        </div>
-        {{#ifNth "2" @index}}
-         <div class="clearfix visible-xs"></div>
-        {{/ifNth}}
-        {{#ifNth "3" @index}}
-         <div class="clearfix visible-sm"></div>
-        {{/ifNth}}
-        {{#ifNth "4" @index}}
-         <div class="clearfix visible-md visible-lg"></div>
-        {{/ifNth}}
-        {{/each}}
+          <h2 class="col-sm-6">Resultate
+            <small>Web-Präsentation</small>
+          </h2>
         
-      </div> <!-- end row  -->
+          <div class="menu js-only col-sm-6">
+            <p><small><b>Sortieren</b> nach:</small>
+              <span class="btn-group btn-group-sm">
+                <button type="button" class="sort btn btn-default" data-sort="name">
+                  Name <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="study">
+                  Studiengang <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="semester">
+                  Semester <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="filesize">
+                  kB <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" title="kB = Dateigröße in Kilobyte">?</span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="loc">
+                  LoC <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" data-container="body" title="LoC = 'Lines of Code', Anzahl der Code-Zeilen">?</span>
+                </button>
+              </span>
+            </p>
+          </div>
+        
+        </div> <!-- end row  -->
+
+        <div class="list row">
+        
+          {{#each results}}
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>{{firstname}} <span class="name">{{lastname}}</span></h3>
+            <p>
+              <span>
+                <b class="study">{{study}}</b>&nbsp;(<span class="semester">{{#if semester}}{{semester}}{{else}}0{{/if}}</span>)
+              </span>
+              {{#if project}}&nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>{{/if}}
+              {{#if fachkurs}}&nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>{{/if}}
+              {{#if freeProject}}&nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>{{/if}}
+              <span class="meta">
+                <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}} LoC </span>
+              </span>
+            </p>
+            <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
+          
+            <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
+          
+            {{#if link}}
+            <p><a class="link" href="http://{{link}}">{{link}}</a>
+              <a class="btnx btn-xs" href="http://{{link}}" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            {{/if}}
+          </div>
+          {{#ifNth "2" @index}}
+           <div class="clearfix visible-xs"></div>
+          {{/ifNth}}
+          {{#ifNth "3" @index}}
+           <div class="clearfix visible-sm"></div>
+          {{/ifNth}}
+          {{#ifNth "4" @index}}
+           <div class="clearfix visible-md visible-lg"></div>
+          {{/ifNth}}
+          {{/each}}
+        
+        </div> <!-- end row  -->
 
       {{/if}}
+      </div> <!-- end #results -->
       
       <div class="debug alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -106,7 +112,7 @@
             <li>{{lastname}}, {{firstname}}</li> 
           {{/link}}
         {{/results}}</ul><br>
-        
+      
           <ul><b>Kein Semester:</b>
           {{#results}}
             {{^semester}}
@@ -127,6 +133,7 @@
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/holder.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="bower_components/list.js/dist/list.min.js"></script>
 
         <script src="js/main.js"></script>
     
