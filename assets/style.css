@@ -15,7 +15,14 @@ a:hover {
 h2, h3, h4 {
  font-weight: 700;   
 }
-/* if browser is too small, don't make small grid */
+/* hack for holder.js*/
+body img {
+  height: auto !important;
+}
+/* if screen is too small, don't make a grid 
+ * (otherwise it would do 2 columns on smartphones
+ *  because we use .col-xs-6)
+*/
 @media(max-width:475px){
   .container, 
   .row [class|="col-xs"] {
@@ -30,10 +37,10 @@ h2, h3, h4 {
 /* site header + menu */
 .jumbotron {
   padding: 2.8em 0;
-  color: #eee;
-  text-shadow: 1px 1px 2px black;
-  background-color: #444;
-  background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_52cf9489095e8_1.JPG");
+  color: hsla(57, 43%, 84%, 1);
+  text-shadow: 1px 1px 2px hsla(212, 39%, 18%, 1);
+  background-color: hsla(212, 39%, 23%, 1);
+  background-image: url("header.png");
   background-size: 100% auto;
   background-attachment: fixed;
 }
@@ -57,7 +64,7 @@ h2 + .menu {
   float: right;
 }
 
-/* menu */
+/* # menu */
 
 /* copy over btn.active from bootstrap for .asc and .desc */
 .menu [data-sort].btn.asc, 
@@ -92,10 +99,15 @@ h2 + .menu {
 
 /* # result listing */
 
-/* items in #result have more space below */
+/* .col-x have more space below */
 #results [class|="col"] {
   margin-bottom: 1em;
 }
+/* if a p follows an img, give p some space */
+#results img + p {
+  margin-top:0.4em;;
+}
+/* typo: */
 #results .link {
   font-size: 1.5em;
   color: hsl(210, 69%, 46%);
