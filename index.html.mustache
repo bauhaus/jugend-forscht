@@ -77,7 +77,7 @@
                 <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}} LoC </span>
               </span>
             </p>
-            <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
+            <img src="images/{{#if image}}{{image}}{{else}}placeholder.png{{/if}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
           
             <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
           
@@ -133,7 +133,6 @@
     </div> <!-- /container -->
     <div id="scripts">
         <script src="{{assets}}/bootstrap/jquery.min.js"></script>
-        <script src="{{assets}}/bootstrap/holder.js" type="text/javascript" charset="utf-8"></script>
         <script src="{{assets}}/bootstrap/bootstrap.min.js"></script>
         <script src="{{assets}}/list.min.js"></script>
 

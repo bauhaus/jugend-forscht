@@ -16,7 +16,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "christinbader.de"
+      "link": "christinbader.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Tiffany",
@@ -27,7 +28,8 @@
       "semester": 5,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Jana",
@@ -38,7 +40,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "janisvoid.de"
+      "link": "janisvoid.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Alexandra",
@@ -50,7 +53,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "abnkhrr.tumblr.com"
+      "link": "abnkhrr.tumblr.com",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Theresa",
@@ -62,7 +66,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "t-rext.github.io"
+      "link": "t-rext.github.io",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Vera",
@@ -74,7 +79,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "verahenzel.github.io"
+      "link": "verahenzel.github.io",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Anna",
@@ -86,7 +92,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "webuser.uni-weimar.de/~rumi4153/"
+      "link": "webuser.uni-weimar.de/~rumi4153/",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Margarete",
@@ -98,7 +105,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "fleurop.github.io"
+      "link": "fleurop.github.io",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Daniel",
@@ -110,7 +118,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "www.dkblackhouse.de"
+      "link": "www.dkblackhouse.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Eva",
@@ -121,7 +130,8 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Anna",
@@ -133,7 +143,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "annaschoeller.tumblr.com"
+      "link": "annaschoeller.tumblr.com",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Linda",
@@ -145,7 +156,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "lindaschumann.de"
+      "link": "lindaschumann.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Nele",
@@ -156,7 +168,8 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Torsten",
@@ -167,7 +180,8 @@
       "semester": 7,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Andreas",
@@ -179,7 +193,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "andreas-tontsch.com"
+      "link": "andreas-tontsch.com",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Malte",
@@ -190,7 +205,8 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Darko",
@@ -202,7 +218,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "darkovelazquez.com"
+      "link": "darkovelazquez.com",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Toumaj",
@@ -214,7 +231,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "dggdw.de"
+      "link": "dggdw.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Melissa",
@@ -225,7 +243,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "elsebeth.github.io"
+      "link": "elsebeth.github.io",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Theresa",
@@ -235,7 +254,8 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Tillmann",
@@ -247,7 +267,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "tillmannohm.com"
+      "link": "tillmannohm.com",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Tonio",
@@ -258,7 +279,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "ar.5p4m.de"
+      "link": "ar.5p4m.de",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Anna",
@@ -268,7 +290,8 @@
       "semester": false,
       "filesize": 0,
       "loc": 0,
-      "text": ""
+      "text": "",
+      "image": "placeholder.png"
     },
     {
       "firstname": "Kilian",
@@ -279,7 +302,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "lab.kilianullmann.de"
+      "link": "lab.kilianullmann.de",
+      "image": "placeholder.png"
     }
   ]
 }
