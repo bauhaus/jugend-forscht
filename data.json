@@ -27,8 +27,7 @@
       "semester": 5,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Jana",
@@ -122,8 +121,7 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Anna",
@@ -158,8 +156,7 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Torsten",
@@ -170,8 +167,7 @@
       "semester": 7,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Andreas",
@@ -194,8 +190,7 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Darko",
@@ -240,8 +235,7 @@
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Tillmann",
@@ -256,17 +250,6 @@
       "link": "tillmannohm.com"
     },
     {
-      "firstname": "Kaspar",
-      "lastname": "Kimmel",
-      "freeProject": true,
-      "study": "FK",
-      "semester": false,
-      "filesize": 0,
-      "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
-    },
-    {
       "firstname": "Tonio",
       "lastname": "Mundry",
       "freeProject": true,
@@ -278,28 +261,6 @@
       "link": "ar.5p4m.de"
     },
     {
-      "firstname": "Charlotte",
-      "lastname": "Iwaniuk",
-      "freeProject": true,
-      "study": false,
-      "semester": false,
-      "filesize": 0,
-      "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
-    },
-    {
-      "firstname": "Anna",
-      "lastname": "Degonda",
-      "freeProject": true,
-      "study": "FK",
-      "semester": false,
-      "filesize": 0,
-      "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
-    },
-    {
       "firstname": "Anna",
       "lastname": "Pfannstiel",
       "fachkurs": true,
@@ -307,8 +268,7 @@
       "semester": false,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "holder.js/360x80"
+      "text": ""
     },
     {
       "firstname": "Kilian",
