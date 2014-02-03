@@ -15,6 +15,17 @@ a:hover {
 h2, h3, h4 {
  font-weight: 700;   
 }
+/* if browser is too small, don't make small grid */
+@media(max-width:475px){
+  .container, 
+  .row [class|="col-xs"] {
+    width: auto;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
 
 /* site header + menu */
 .jumbotron {
@@ -48,16 +59,6 @@ h2 + .menu {
 
 /* menu */
 
-/* if browser is too small, don't make small grid */
-@media(max-width:475px){
-  /* we use only the half-size */
-  #results .col-xs-6 {
-    width: auto;
-    max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
 /* copy over btn.active from bootstrap for .asc and .desc */
 .menu [data-sort].btn.asc, 
 .menu [data-sort].btn.desc {
@@ -89,6 +90,7 @@ h2 + .menu {
   content: "";
 }
 
+/* # result listing */
 
 /* items in #result have more space below */
 #results [class|="col"] {

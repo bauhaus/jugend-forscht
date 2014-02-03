@@ -1,5 +1,9 @@
-// init bootstrap's tooltip plugin
+// jQuery: do this when page has loaded
 $(function () {
+  
+  // ## boostrap 
+  
+  // init bootstrap's tooltip plugin
   $("[data-toggle='tooltip']").tooltip({
     // attach all tooltips to body
     container: "body"
