@@ -18,6 +18,7 @@ module.exports = function(grunt) {
     assemble: {
       // Task-level options
       options: {
+        assets: "./assets",
         prettify: {indent: 2},
         marked: {sanitize: false},
         engine: 'handlebars'
