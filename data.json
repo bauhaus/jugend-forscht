@@ -3,7 +3,7 @@
   "tagline": "hello world!",
   "footer": [
     "Projekt 'Jugend forscht' bei Prof. Norbert Hinterberger und Dr. Naomi T. Salmon, Freie Kunst, Bauhaus-Universität Weimar, WS 2013/24",
-    "Der Quelltext dieser Webseite ist 'open source', lizensiert unter der <a href='#'>GPLv2 Lizenz</a> und <a href='#'>auf Github zu finden</a>."
+    "Der Quelltext dieser Webseite ist *'open source'*, lizensiert unter der [GPLv2 Lizenz](https://github.com/bauhaus/jugend-forscht/blob/gh-pages/LICENSE) und [auf Github zu finden](https://github.com/bauhaus/jugend-forscht)."
   ],
   "results": [
     {
