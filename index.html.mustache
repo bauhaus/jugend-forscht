@@ -69,10 +69,10 @@
             {{#if fachkurs}}&nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>{{/if}}
             {{#if freeProject}}&nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>{{/if}}
             <span class="meta">
-              <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}}L </span>
+              <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}} LoC </span>
             </span>
           </p>
-          <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{study}}">
+          <img src="{{#if image}}{{image}}{{else}}holder.js/360x80{{/if}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
           
           <p>{{#if text}}{{text}}{{else}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.{{/if}}</p>
           
@@ -124,7 +124,7 @@
       </footer>
     </div> <!-- /container -->
     
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/holder.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
 
