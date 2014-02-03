@@ -28,786 +28,792 @@
 
     <div class="container">
       
-      <div class="row">
+      
+      <div id="results">
+      
+        <div class="row">
         
-        <h2 class="col-sm-6">Resultate
-          <small>Web-Präsentation</small>
-        </h2>
+          <h2 class="col-sm-6">Resultate
+            <small>Web-Präsentation</small>
+          </h2>
         
-        <div class="menu js-only col-sm-6">
-          <p><small><b>Sortieren</b> nach:</small>
-            <span class="btn-group btn-group-sm">
-              <button type="button" class="btn btn-default active">Name</button>
-              <button type="button" class="btn btn-default">Studiengang</button>
-              <button type="button" class="btn btn-default">Semester</button>
-              <button type="button" class="btn btn-default">
-                kB&nbsp;&nbsp;
-                <span class="badge" data-toggle="tooltip" title="kB = Dateigröße in Kilobyte">?</span>
-              </button>
-              <button type="button" class="btn btn-default">
-                LoC&nbsp;&nbsp;
-                <span class="badge" data-toggle="tooltip" data-container="body" title="LoC = 'Lines of Code', Anzahl der Code-Zeilen">?</span>
-              </button>
-            </span>
-          </p>
-        </div>
+          <div class="menu js-only col-sm-6">
+            <p><small><b>Sortieren</b> nach:</small>
+              <span class="btn-group btn-group-sm">
+                <button type="button" class="sort btn btn-default" data-sort="name">
+                  Name <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="study">
+                  Studiengang <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="semester">
+                  Semester <span class="caret"></span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="filesize">
+                  kB <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" title="kB = Dateigröße in Kilobyte">?</span>
+                </button>
+                <button type="button" class="sort btn btn-default" data-sort="loc">
+                  LoC <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" data-container="body" title="LoC = 'Lines of Code', Anzahl der Code-Zeilen">?</span>
+                </button>
+              </span>
+            </p>
+          </div>
         
-      </div> <!-- end row  -->
+        </div> <!-- end row  -->
+
+        <div class="list row">
+        
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Christin <span class="name">Bader</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">8</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Christin Bader">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://christinbader.de">christinbader.de</a>
+              <a class="btnx btn-xs" href="http://christinbader.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Tiffany <span class="name">Baysden</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">5</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Tiffany Baysden">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Jana <span class="name">Borsche</span></h3>
+            <p>
+              <span>
+                <b class="study">VK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Jana Borsche">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://janisvoid.de">janisvoid.de</a>
+              <a class="btnx btn-xs" href="http://janisvoid.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Alexandra <span class="name">Bunkherr</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">9</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Alexandra Bunkherr">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://abnkhrr.tumblr.com">abnkhrr.tumblr.com</a>
+              <a class="btnx btn-xs" href="http://abnkhrr.tumblr.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Theresa <span class="name">Ehrenberg</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Theresa Ehrenberg">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://t-rext.github.io">t-rext.github.io</a>
+              <a class="btnx btn-xs" href="http://t-rext.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Vera <span class="name">Henzel</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Vera Henzel">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://verahenzel.github.io">verahenzel.github.io</a>
+              <a class="btnx btn-xs" href="http://verahenzel.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Anna <span class="name">Heyde</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">7</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Anna Heyde">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://webuser.uni-weimar.de/~rumi4153/">webuser.uni-weimar.de/~rumi4153/</a>
+              <a class="btnx btn-xs" href="http://webuser.uni-weimar.de/~rumi4153/" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Margarete <span class="name">Kiss</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Margarete Kiss">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://fleurop.github.io">fleurop.github.io</a>
+              <a class="btnx btn-xs" href="http://fleurop.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Daniel <span class="name">Koch</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">9</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Daniel Koch">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://www.dkblackhouse.de">www.dkblackhouse.de</a>
+              <a class="btnx btn-xs" href="http://www.dkblackhouse.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Eva <span class="name">Prüglmeier</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Eva Prüglmeier">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Anna <span class="name">Schöller</span></h3>
+            <p>
+              <span>
+                <b class="study">LAK</b>&nbsp;(<span class="semester">5</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Anna Schöller">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://annaschoeller.tumblr.com">annaschoeller.tumblr.com</a>
+              <a class="btnx btn-xs" href="http://annaschoeller.tumblr.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Linda <span class="name">Schumann</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">9</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Linda Schumann">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://lindaschumann.de">lindaschumann.de</a>
+              <a class="btnx btn-xs" href="http://lindaschumann.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Nele <span class="name">Seifert</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Nele Seifert">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Torsten <span class="name">Thiele</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">7</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Torsten Thiele">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Andreas <span class="name">Tontsch</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">9</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Andreas Tontsch">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://andreas-tontsch.com">andreas-tontsch.com</a>
+              <a class="btnx btn-xs" href="http://andreas-tontsch.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Malte <span class="name">Urban</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Malte Urban">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Darko <span class="name">Velazquez</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">7</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Darko Velazquez">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://darkovelazquez.com">darkovelazquez.com</a>
+              <a class="btnx btn-xs" href="http://darkovelazquez.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Toumaj <span class="name">Zeraati</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">7</span>)
+              </span>
+              &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Toumaj Zeraati">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://dggdw.de">dggdw.de</a>
+              <a class="btnx btn-xs" href="http://dggdw.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Melissa <span class="name">Holstein</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Melissa Holstein">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://elsebeth.github.io">elsebeth.github.io</a>
+              <a class="btnx btn-xs" href="http://elsebeth.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Theresa <span class="name">Elstner</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Theresa Elstner">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Tillmann <span class="name">Ohm</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">3</span>)
+              </span>
+              
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Tillmann Ohm">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://tillmannohm.com">tillmannohm.com</a>
+              <a class="btnx btn-xs" href="http://tillmannohm.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Kaspar <span class="name">Kimmel</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              
+              &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Kaspar Kimmel">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Tonio <span class="name">Mundry</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              
+              &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Tonio Mundry">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://ar.5p4m.de">ar.5p4m.de</a>
+              <a class="btnx btn-xs" href="http://ar.5p4m.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Charlotte <span class="name">Iwaniuk</span></h3>
+            <p>
+              <span>
+                <b class="study"></b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              
+              &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Charlotte Iwaniuk">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+           <div class="clearfix visible-md visible-lg"></div>
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Anna <span class="name">Degonda</span></h3>
+            <p>
+              <span>
+                <b class="study">FK</b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              
+              &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Anna Degonda">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Anna <span class="name">Pfannstiel</span></h3>
+            <p>
+              <span>
+                <b class="study">MG</b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Anna Pfannstiel">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+          </div>
+          
+           <div class="clearfix visible-xs"></div>
+          
+          
+          
+          
+          <div class="col-xs-6 col-sm-4 col-md-3">
+            <h3>Kilian <span class="name">Ullmann</span></h3>
+            <p>
+              <span>
+                <b class="study">MG</b>&nbsp;(<span class="semester">0</span>)
+              </span>
+              
+              &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
+              
+              <span class="meta">
+                <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
+              </span>
+            </p>
+            <img src="holder.js/360x80" class="img-responsive" alt="Kilian Ullmann">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          
+            
+            <p><a class="link" href="http://lab.kilianullmann.de">lab.kilianullmann.de</a>
+              <a class="btnx btn-xs" href="http://lab.kilianullmann.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
+            </p>
+            
+          </div>
+          
+          
+           <div class="clearfix visible-sm"></div>
+          
+          
+          
+        
+        </div> <!-- end row  -->
 
       
-      
-      <div id="results" class="row">
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Christin <span class="name">Bader</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(8)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Christin Bader">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://christinbader.de">christinbader.de</a>
-            <a class="btnx btn-xs" href="http://christinbader.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Tiffany <span class="name">Baysden</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(5)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Tiffany Baysden">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Jana <span class="name">Borsche</span></h3>
-          <p>
-            <span>
-              <b class="study">VK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Jana Borsche">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://janisvoid.de">janisvoid.de</a>
-            <a class="btnx btn-xs" href="http://janisvoid.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Alexandra <span class="name">Bunkherr</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(9)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Alexandra Bunkherr">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://abnkhrr.tumblr.com">abnkhrr.tumblr.com</a>
-            <a class="btnx btn-xs" href="http://abnkhrr.tumblr.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Theresa <span class="name">Ehrenberg</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Theresa Ehrenberg">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://t-rext.github.io">t-rext.github.io</a>
-            <a class="btnx btn-xs" href="http://t-rext.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Vera <span class="name">Henzel</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Vera Henzel">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://verahenzel.github.io">verahenzel.github.io</a>
-            <a class="btnx btn-xs" href="http://verahenzel.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Anna <span class="name">Heyde</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(7)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Anna Heyde">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://webuser.uni-weimar.de/~rumi4153/">webuser.uni-weimar.de/~rumi4153/</a>
-            <a class="btnx btn-xs" href="http://webuser.uni-weimar.de/~rumi4153/" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Margarete <span class="name">Kiss</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Margarete Kiss">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://fleurop.github.io">fleurop.github.io</a>
-            <a class="btnx btn-xs" href="http://fleurop.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Daniel <span class="name">Koch</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(9)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Daniel Koch">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://www.dkblackhouse.de">www.dkblackhouse.de</a>
-            <a class="btnx btn-xs" href="http://www.dkblackhouse.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Eva <span class="name">Prüglmeier</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Eva Prüglmeier">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Anna <span class="name">Schöller</span></h3>
-          <p>
-            <span>
-              <b class="study">LAK</b>&nbsp;<span class="semester">(5)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Anna Schöller">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://annaschoeller.tumblr.com">annaschoeller.tumblr.com</a>
-            <a class="btnx btn-xs" href="http://annaschoeller.tumblr.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Linda <span class="name">Schumann</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(9)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Linda Schumann">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://lindaschumann.de">lindaschumann.de</a>
-            <a class="btnx btn-xs" href="http://lindaschumann.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Nele <span class="name">Seifert</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Nele Seifert">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Torsten <span class="name">Thiele</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(7)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Torsten Thiele">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Andreas <span class="name">Tontsch</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(9)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Andreas Tontsch">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://andreas-tontsch.com">andreas-tontsch.com</a>
-            <a class="btnx btn-xs" href="http://andreas-tontsch.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Malte <span class="name">Urban</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Malte Urban">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Jesus Darko <span class="name">Velasquez</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(7)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Jesus Darko Velasquez">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://darkovelazquez.com">darkovelazquez.com</a>
-            <a class="btnx btn-xs" href="http://darkovelazquez.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Toumaj <span class="name">Zeraati</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(7)</span>
-            </span>
-            &nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Toumaj Zeraati">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://dggdw.de">dggdw.de</a>
-            <a class="btnx btn-xs" href="http://dggdw.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Melissa <span class="name">Holstein</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Melissa Holstein">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://elsebeth.github.io">elsebeth.github.io</a>
-            <a class="btnx btn-xs" href="http://elsebeth.github.io" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Theresa <span class="name">Elstner</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Theresa Elstner">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Tillmann <span class="name">Ohm</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>&nbsp;<span class="semester">(3)</span>
-            </span>
-            
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Tillmann Ohm">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://tillmannohm.com">tillmannohm.com</a>
-            <a class="btnx btn-xs" href="http://tillmannohm.com" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Kaspar <span class="name">Kimmel</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>
-            </span>
-            
-            
-            &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Kaspar Kimmel">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Tonio <span class="name">Mundry</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>
-            </span>
-            
-            
-            &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Tonio Mundry">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://ar.5p4m.de">ar.5p4m.de</a>
-            <a class="btnx btn-xs" href="http://ar.5p4m.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Charlotte <span class="name">Iwaniuk</span></h3>
-          <p>
-            <span>
-              <b class="study"></b>
-            </span>
-            
-            
-            &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Charlotte Iwaniuk">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-         <div class="clearfix visible-md visible-lg"></div>
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Anna <span class="name">Degonda</span></h3>
-          <p>
-            <span>
-              <b class="study">FK</b>
-            </span>
-            
-            
-            &nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Anna Degonda">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Anna <span class="name">Pfannstiel</span></h3>
-          <p>
-            <span>
-              <b class="study">MG</b>
-            </span>
-            
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Anna Pfannstiel">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-        </div>
-        
-         <div class="clearfix visible-xs"></div>
-        
-        
-        
-        
-        <div class="col-xs-6 col-sm-4 col-md-3">
-          <h3>Kilian <span class="name">Ullmann</span></h3>
-          <p>
-            <span>
-              <b class="study">MG</b>
-            </span>
-            
-            &nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>
-            
-            <span class="meta">
-              <span class="filesize">0 kB</span>;&nbsp;<span class="loc">0 LoC </span>
-            </span>
-          </p>
-          <img src="holder.js/360x80" class="img-responsive" alt="Kilian Ullmann">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          
-          
-          <p><a class="link" href="http://lab.kilianullmann.de">lab.kilianullmann.de</a>
-            <a class="btnx btn-xs" href="http://lab.kilianullmann.de" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a>
-          </p>
-          
-        </div>
-        
-        
-         <div class="clearfix visible-sm"></div>
-        
-        
-        
-        
-      </div> <!-- end row  -->
-
-      
+      </div> <!-- end #results -->
       
       <div class="debug alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -888,7 +894,7 @@
         
           
         </ul><br>
-        
+      
           <ul><b>Kein Semester:</b>
           
             
@@ -973,6 +979,7 @@
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
         <script src="js/vendor/holder.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="bower_components/list.js/dist/list.min.js"></script>
 
         <script src="js/main.js"></script>
     
