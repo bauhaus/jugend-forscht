@@ -277,7 +277,7 @@
       "lastname": "Mundry",
       "freeProject": true,
       "study": "FK",
-      "semester": false,
+      "semester": 9,
       "filesize": 0,
       "loc": 0,
       "text": "",
