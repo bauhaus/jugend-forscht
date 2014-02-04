@@ -13,7 +13,7 @@ $(function () {
   ['results'].forEach(function (container) {
     
     var options = {
-        valueNames: [ 'name', 'study', 'filesize', 'loc' ]
+        valueNames: [ 'firstname', 'name', 'study', 'semester', 'filesize', 'loc' ]
     };
     
     var list = new List(container, options);
