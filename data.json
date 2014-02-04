@@ -29,6 +29,7 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
+      "link": "tiffanybaysden.github.io",
       "image": "images/placeholder.png"
     },
     {
@@ -118,7 +119,7 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "link": "www.dkblackhouse.de",
+      "link": "dkblackhouse.de",
       "image": "images/placeholder.png"
     },
     {
@@ -206,6 +207,7 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
+      "link": "lllolll.de",
       "image": "images/placeholder.png"
     },
     {
@@ -298,7 +300,7 @@
       "lastname": "Ullmann",
       "fachkurs": true,
       "study": "MG",
-      "semester": false,
+      "semester": 5,
       "filesize": 0,
       "loc": 0,
       "text": "",
