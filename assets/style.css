@@ -9,16 +9,20 @@ http://www.google.com/fonts/#ReviewPlace:refine/Collection:Exo|Alegreya+Sans|Ral
 body, body * {
   font-family: 'Alegreya Sans', Baskerville, Georgia, serif;
 }
+body {
+  background-color: hsla(57, 43%, 84%, 1);
+}
 a:hover {
   text-decoration: none;
 }
 h2, h3, h4 {
  font-weight: 700;   
 }
-/* hack for holder.js*/
-body img {
-  height: auto !important;
+.badge {
+  color: hsla(57, 43%, 90%, 1);
+  background-color: hsla(212, 29%, 50%, 1);
 }
+
 /* if screen is too small, don't make a grid 
  * (otherwise it would do 2 columns on smartphones
  *  because we use .col-xs-6)
@@ -100,27 +104,39 @@ h2 + .menu {
 /* # result listing */
 
 /* .col-x have more space below */
-#results [class|="col"] {
-  margin-bottom: 1em;
+#results .row [class|="col-xs"] {
+  padding: 0.5em;
+}
+#results .exhibit {
+  padding: 1em;
+  background-color: white;
+  border: 1px solid hsla(212, 29%, 30%, 0.25);
+  border-bottom-width: 2px;
+}
+#results .exhibit h3 {
+  margin-top: 0;
 }
 /* if a p follows an img, give p some space */
 #results img + p {
   margin-top:0.4em;;
 }
 /* typo: */
+#results a {
+  color: hsl(212, 69%, 40%);  
+  border-color: hsl(212, 69%, 40%);
+  border-width: 0.125em;
+}
+#results a:hover {
+  color: hsl(212, 69%, 20%);
+  border-color: hsl(212, 69%, 20%);
+}
 #results .link {
   font-size: 1.5em;
-  color: hsl(210, 69%, 46%);
-  white-space: nowrap;
-  background-color: #fff;
-  border-color: hsl(210, 69%, 46%);
-  border-width: 0.125em;
   border-bottom-style: solid;
+/*  background-color: #fff;*/
 }
 #results .link:hover {
-  color: hsl(210, 69%, 36%);
-  background-color: hsl(210, 37%, 96%);
-  border-color: hsl(210, 69%, 36%);
+  background-color: hsl(212, 37%, 96%);
 }
 #results .meta {
   float: right;
