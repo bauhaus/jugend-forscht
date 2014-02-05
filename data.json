@@ -251,28 +251,15 @@
       "image": "images/placeholder.png"
     },
     {
-      "firstname": "Theresa",
-      "lastname": "Elstner",
+      "lastname": "Institut TITHE",
       "fachkurs": true,
       "study": "FK",
       "semester": 3,
       "filesize": 0,
       "loc": 0,
-      "text": "",
-      "image": "images/placeholder.png"
-    },
-    {
-      "firstname": "Tillmann",
-      "lastname": "Ohm",
-      "fachkurs": true,
-      "freeProject": true,
-      "study": "FK",
-      "semester": 3,
-      "filesize": 0,
-      "loc": 0,
-      "text": "",
-      "link": "tillmannohm.com",
-      "image": "images/placeholder.png"
+      "text": "Das 2013 von Tillmann Ohm und Theresa Elstner gegründete Institut TITHE hat sich in Thüringen zur wichtigsten Organisation für barrierefreie Kunst etabliert. Des Weiteren steht TITHE für gendergerechte Kunst und Tierschutz im Ausstellungskontext. Künstler, die in ihren Arbeiten auf nationalsozialistische Symbole und Nudismus verzichten, werden vom Institut mit dem „Well-Done-Award“ ausgezeichnet.",
+      "link": "webuser.uni-weimar.de/~peqa4167/",
+      "image": "http://webuser.uni-weimar.de/~peqa4167/index_files/tithe-logo.jpg"
     },
     {
       "firstname": "Tonio",
