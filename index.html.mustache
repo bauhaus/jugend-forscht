@@ -69,10 +69,10 @@
                     <button type="button" class="sort btn btn-default" data-sort="semester">
                       Semester <span class="caret"></span>
                     </button>
-                    <button type="button" class="sort btn btn-default" data-sort="filesize">
+                    <button type="button" class="todo sort btn btn-default" data-sort="filesize">
                       kB <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" title="kB = Dateigröße in Kilobyte">?</span>
                     </button>
-                    <button type="button" class="sort btn btn-default" data-sort="loc">
+                    <button type="button" class="todo sort btn btn-default" data-sort="loc">
                       LoC <span class="caret"></span>&nbsp;&nbsp;<span class="badge" data-toggle="tooltip" data-container="body" title="LoC = 'Lines of Code', Anzahl der Code-Zeilen">?</span>
                     </button>
                   </span>
@@ -98,9 +98,10 @@
                 {{#if project}}&nbsp;<span class="project badge" data-toggle="tooltip" data-placement="bottom" title="P = Projekt „Jugend forscht“">P</span>{{/if}}
                 {{#if fachkurs}}&nbsp;<span class="fachkurs badge" data-toggle="tooltip" data-placement="bottom" title="F = Fachkurs „Kunst–Technik–Labor“">F</span>{{/if}}
                 {{#if freeProject}}&nbsp;<span class="freeProject badge" data-toggle="tooltip" data-placement="bottom" title="FP = Freies Projekt">FP</span>{{/if}}
-                <span class="meta">
+                <span class="todo meta">
                   <span class="filesize">{{filesize}} kB</span>;&nbsp;<span class="loc">{{loc}} LoC </span>
                 </span>
+                
               </p>
               <img src="{{image}}" class="img-responsive" alt="{{firstname}} {{lastname}}">
           

@@ -17,7 +17,7 @@
       "loc": 0,
       "text": "",
       "link": "christinbader.de",
-      "image": "http://christinbader.de/Bilder/6/6Q.jpg"
+      "image": "http://christinbader.de/Bilder/6/6Q2.jpg"
     },
     {
       "firstname": "Tiffany",
@@ -68,7 +68,7 @@
       "loc": 0,
       "text": "",
       "link": "t-rext.github.io",
-      "image": "images/_theresa_ehrenberg.png"
+      "image": "images/theresa-ehrenberg_Foto_am_05-02-2014_um_21.18-3.jpg"
     },
     {
       "firstname": "Vera",
@@ -171,7 +171,8 @@
       "filesize": 0,
       "loc": 0,
       "text": "",
-      "image": "images/placeholder.png"
+      "link": "webuser.uni-weimar.de/~yigo7130/",
+      "image": "images/nele-seifert_greifswald1.jpg"
     },
     {
       "firstname": "Torsten",
@@ -210,7 +211,7 @@
       "loc": 0,
       "text": "",
       "link": "lllolll.de",
-      "image": "images/_malte_urban.png"
+      "image": "images/malte-urban_untitled.png"
     },
     {
       "firstname": "Darko",
@@ -274,17 +275,6 @@
       "image": "http://ar.5p4m.de/wp-content/gallery/gallery/ar_5p4m_2014-01-04_16-16-49.png"
     },
     {
-      "firstname": "Anna",
-      "lastname": "Pfannstiel",
-      "fachkurs": true,
-      "study": "MG",
-      "semester": false,
-      "filesize": 0,
-      "loc": 0,
-      "text": "",
-      "image": "images/placeholder.png"
-    },
-    {
       "firstname": "Kilian",
       "lastname": "Ullmann",
       "fachkurs": true,
@@ -294,7 +284,7 @@
       "loc": 0,
       "text": "",
       "link": "lab.kilianullmann.de",
-      "image": "http://25.media.tumblr.com/97112b84211fa9e45f1188a6ee964d62/tumblr_mqyf8tJSKH1qfz6amo1_r1_1280.jpg"
+      "image": "http://24.media.tumblr.com/tumblr_mdjiggUMoy1qfz6amo1_1280.jpg"
     }
   ]
 }

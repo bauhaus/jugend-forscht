@@ -162,3 +162,7 @@ h2 + .menu {
 html.js .js-only {
   display: inherit;
 }
+
+.debug, .todo {
+  display: none;
+}
