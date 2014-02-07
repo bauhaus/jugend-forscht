@@ -163,6 +163,8 @@ html.js .js-only {
   display: inherit;
 }
 
-.debug, .todo {
+.debug, 
+.todo,
+[data-data] {
   display: none;
 }
